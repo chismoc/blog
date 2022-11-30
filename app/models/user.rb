@@ -6,4 +6,5 @@ class User < ApplicationRecord
   #delete posts and comments when user is delete     
          has_many :posts, dependent: :destroy
          has_many :comments, dependent: :destroy
+         has_many :notifications, as: :recipient, dependent: :destroy
 end
