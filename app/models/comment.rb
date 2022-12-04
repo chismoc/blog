@@ -1,5 +1,5 @@
 class Comment < ApplicationRecord
-  belongs_to :post
+  belongs_to :post,counter_cache: true
   belongs_to :user
   has_rich_text :body
 
@@ -13,6 +13,6 @@ class Comment < ApplicationRecord
   end
 
   def cleanup_notifications
-    notifications_as_comment.destroy_all
+   notifications_as_comment.destroy_all
   end
 end
