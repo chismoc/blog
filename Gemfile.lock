@@ -158,6 +158,7 @@ GEM
       http (>= 4.0.0)
       rails (>= 5.2.0)
     orm_adapter (0.5.0)
+    pg (1.4.5-x64-mingw32)
     public_suffix (5.0.0)
     puma (5.6.5)
       nio4r (~> 2.0)
@@ -218,7 +219,6 @@ GEM
       actionpack (>= 5.2)
       activesupport (>= 5.2)
       sprockets (>= 3.0.0)
-    sqlite3 (1.5.4-x64-mingw32)
     stimulus-rails (1.1.1)
       railties (>= 6.0.0)
     thor (1.2.1)
@@ -267,12 +267,12 @@ DEPENDENCIES
   importmap-rails
   jbuilder
   noticed (~> 1.6)
+  pg (~> 1.4, >= 1.4.3)
   puma (~> 5.0)
   rails (~> 7.0.4)
   ransack (~> 3.2)
   selenium-webdriver
   sprockets-rails
-  sqlite3 (~> 1.4)
   stimulus-rails
   turbo-rails
   tzinfo-data
