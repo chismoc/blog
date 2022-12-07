@@ -56,7 +56,7 @@ end
 group :development do
   # Use console on exceptions pages [https://github.com/rails/web-console]
   gem "web-console"
-  gem 'bullet'
+ 
 
   # Add speed badges [https://github.com/MiniProfiler/rack-mini-profiler]
   # gem "rack-mini-profiler"
@@ -73,6 +73,12 @@ group :test do
 end
 gem 'devise'
 
+gem 'bullet'
+
 gem "noticed", "~> 1.6"
 
 gem "ransack", "~> 3.2"
+
+gem 'friendly_id', '~> 5.4'
+
+gem 'activerecord-import', '~> 1.4'
