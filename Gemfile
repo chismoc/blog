@@ -82,3 +82,5 @@ gem "ransack", "~> 3.2"
 gem 'friendly_id', '~> 5.4'
 
 gem 'activerecord-import', '~> 1.4'
+
+gem 'wicked', '~> 1.3'
