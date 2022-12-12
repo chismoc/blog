@@ -30,6 +30,11 @@ Address.first_or_create!(street: '123 Main St',
                          zip: 10001,
                          country: 'USA',
                          user: jane)
+category = Category.first_or_create!(name:"uncategorized", display_in_nav: true)
+Category.first_or_create!(name:"HTML", display_in_nav: true)
+Category.first_or_create!(name:"CSS", display_in_nav: true)
+Category.first_or_create!(name:"Javascript", display_in_nav: true)
+Category.first_or_create!(name:"Ruby on Rails", display_in_nav: true)
 
 elapsed = Benchmark.measure do
   posts = []
@@ -37,7 +42,8 @@ elapsed = Benchmark.measure do
     puts "Creating post #{x}"
     post = Post.new(title: "Title #{x}",
                     body: "Body #{x} we got some words over here",
-                    user: chichi)
+                    user: chichi,
+                    category: category)
   5.times do |y|
     puts "Creating comment #{y} for post #{x}"
     post.comments.build(body: "Comment #{y}",

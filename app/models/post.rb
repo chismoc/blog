@@ -7,6 +7,8 @@ class Post < ApplicationRecord
     #if delete post delete all comments
     has_many :comments, dependent: :destroy
     has_rich_text :body
+    belongs_to :category
+    
     has_one :content, class_name: 'ActionText::RichText', as: :record, dependent: :destroy
 
     has_noticed_notifications model_name: 'Notification'
