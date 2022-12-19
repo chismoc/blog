@@ -5,10 +5,11 @@
 <div id="posts">
   <% @posts.each do |post| %>
     <%= render post %>
-    <p>
-      <%= link_to "Show this post", post %>
+    <p class="ms-3">
+      <%= link_to "Show this post", post %> |
+      <%= link_to "Create new post", new_post_path %>
     </p>
   <% end %>
 </div>
 
-<%= link_to "New post", new_post_path %>
+
